@@ -5,6 +5,7 @@ import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
+//Tela de cadastro
 const Signup = () => {
   const [cpf, setCPF] = useState("");
   const [email, setEmail] = useState("");
@@ -16,7 +17,7 @@ const Signup = () => {
   const { signup } = useAuth();
 
   const handleSignup = () => {
-    if (!email | !emailConf | !senha) {
+    if (!cpf | !email | !emailConf | !senha) {
       setError("Preencha todos os campos");
       return;
     } else if (email !== emailConf) {
@@ -24,7 +25,7 @@ const Signup = () => {
       return;
     }
 
-    const res = signup(email, senha);
+    const res = signup(cpf, senha);
 
     if (res) {
       setError(res);
