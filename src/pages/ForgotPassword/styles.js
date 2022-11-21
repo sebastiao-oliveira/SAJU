@@ -26,17 +26,17 @@ export const Content = styled.div`
 export const Label = styled.label`
   font-size: 18px;
   font-weight: 600;
-  color:#a60000;
+  color: #232323;
 `;
 
-export const LabelSignup = styled.label`
+export const LabelSignin = styled.label`
   font-size: 16px;
-  color:#232323;
+  color: #232323;
 `;
 
 export const labelError = styled.label`
   font-size: 14px;
-  color: #232323;
+  color: red;
 `;
 
 export const Strong = styled.strong`

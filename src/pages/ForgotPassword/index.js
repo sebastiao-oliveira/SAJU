@@ -28,9 +28,12 @@ const Signup = () => {
           type="email"
           placeholder="Digite seu E-mail"
         />
-        
         <Button Text="Enviar" onClick={handleSignup} />
-        
+        <C.LabelSignin>
+         <C.Strong>
+            <Link to="/">&nbsp;Voltar ao login</Link>
+          </C.Strong>
+        </C.LabelSignin>
       </C.Content>
     </C.Container>
   );
