@@ -35,10 +35,12 @@ const Signin = () => {
       <C.Label>SAJU</C.Label>
       <C.Content>
         <Input
-          type="cpf"
-          placeholder="Digite seu CPF"
+          type="text"
+          placeholder="Digite seu CPF, Apenas Números"
           value={cpf}
           onChange={(e) => [setCPF(e.target.value), setError("")]}
+          id="campo_cpf" 
+          required
         />
         <Input
           type="password"
@@ -51,7 +53,7 @@ const Signin = () => {
         <C.LabelSignup>
           Não tem uma conta?
           <C.Strong>
-            <Link to="/signup">&nbsp;Registre-se</Link>
+            <Link to="/forgotpassword">&nbsp;esqueci a senha</Link>
           </C.Strong>
         </C.LabelSignup>
       </C.Content>

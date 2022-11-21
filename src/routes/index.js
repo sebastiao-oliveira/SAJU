@@ -4,6 +4,7 @@ import useAuth from "../hooks/useAuth";
 import Home from "../pages/Home";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
+import ForgotPassword from "../pages/ForgotPassword";
 
 const Private = ({ Item }) => {
   const { signed } = useAuth();
@@ -19,6 +20,7 @@ const RoutesApp = () => {
           <Route exact path="/home" element={<Private Item={Home} />} />
           <Route path="/" element={<Signin />} />
           <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="*" element={<Signin />} />
         </Routes>
       </Fragment>

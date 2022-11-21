@@ -41,7 +41,7 @@ const Signup = () => {
       <C.Label>Cadastro</C.Label>
       <C.Content>
       <Input
-          type="cpf"
+          type="number"
           placeholder="Digite seu CPF"
           value={cpf}
           onChange={(e) => [setCPF(e.target.value), setError("")]}
@@ -65,7 +65,7 @@ const Signup = () => {
           onChange={(e) => [setSenha(e.target.value), setError("")]}
         />
         <C.labelError>{error}</C.labelError>
-        <Button Text="Inscrever-se" onClick={handleSignup} />
+        <Button Text="Cadastrar" onClick={handleSignup} />
         <C.LabelSignin>
           Já tem uma conta?
           <C.Strong>
