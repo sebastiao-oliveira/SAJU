@@ -7,6 +7,32 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   gap: 20px;
+
+ 
 `;
 
 export const Title = styled.h2``;
+
+export const Content = styled.div`
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+  }
+  li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+    }
+    ul li a {
+      display: block;
+      text-decoration: none;
+      color: #E2144A;
+      background: #fff;
+      padding: 5px;
+      border: 1px solid #ccc;
+   }
+   li:hover ul { display: block; }
+`;
