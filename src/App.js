@@ -8,6 +8,7 @@ const App = () => (
     <RoutesApp />
     <GlobalStyle />
   </AuthProvider>
+  
 );
 
 export default App;
