@@ -30,7 +30,7 @@ ul {
     ul li a {
       display: block;
       text-decoration: none;
-      color: #E2144A;
+      color:#970000 ;
       background: #fff;
       padding: 5px;
       border: 1px solid #ccc;

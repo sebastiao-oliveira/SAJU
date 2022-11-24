@@ -33,21 +33,3 @@ const Home = () => {
 };
 export default Home;
 
-
-
-/*
-const Header = () => {
-  const [sidebar, setSidebar] = useState(false)
-
-  const showSiderbar = () => setSidebar(!sidebar)
-
-  return (
-    <C.Container>
-      <FaBars onClick={showSiderbar} />
-      {sidebar && <Sidebar active={setSidebar} />}
-    </C.Container>
-  )
-}
-export default Header;
-*/
-

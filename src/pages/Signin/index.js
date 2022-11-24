@@ -56,7 +56,15 @@ const Signin = () => {
             <Link to="/forgotpassword">&nbsp;esqueci a senha</Link>
           </C.Strong>
         </C.LabelSignup>
-      </C.Content>
+        </C.Content>
+      
+        <C.LabelSignup>
+          Desaja testar?
+          <C.Strong>
+            <Link to="/Signup">&nbsp;Cadastre um usuário fictício</Link>
+          </C.Strong>
+        </C.LabelSignup>
+         
     </C.Container>
   );
 };
