@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export const Title = styled.h2``;
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -7,6 +9,22 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 10px;
   height: 100vh;
+`;
+export const Container2 = styled.div`
+  height: 100px;
+  display: flex;
+  background-color: #970000; 
+  box-shadow: 0 0 20px 3px;
+
+  > svg {
+    position: fixed;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-top: 32px;
+    margin-left: 32px;
+    cursor: pointer;
+  }
 `;
 
 export const Content = styled.div`

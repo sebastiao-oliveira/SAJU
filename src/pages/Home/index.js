@@ -4,11 +4,10 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import useAuth from "../../hooks/useAuth";
 import * as C from "./styles";
+import { FaBars } from "react-icons/fa"
+import Sidebar from "../../components/Sidebar"
 
-import { FaBars } from 'react-icons/fa'
-import Sidebar from '../Sidebar'
-
-
+//
 const Home = () => {
   const { signout } = useAuth();
   const navigate = useNavigate();

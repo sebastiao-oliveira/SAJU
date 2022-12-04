@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Sidebar from "../../components/Sidebar";
+import { FaBars } from "react-icons/fa";
+
 
 //Tela de cadastro
 const Signup = () => {
@@ -15,6 +19,10 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const { signup } = useAuth();
+
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSiderbar = () => setSidebar(!sidebar);
 
   const handleSignup = () => {
     if (!cpf | !email | !emailConf | !senha) {
@@ -37,10 +45,19 @@ const Signup = () => {
   };
 
   return (
-    <C.Container>
-      <C.Label>Cadastro</C.Label>
+    
+    <C.Container2>
+     <C.Title>Tela Inicial</C.Title>
+        <Button Text="Sair" onClick={() => [navigate("/")]}>
+          Sair
+        </Button>
+
+        <FaBars onClick={showSiderbar} />
+        {sidebar && <Sidebar active={setSidebar} />}
+  
+
       <C.Content>
-      <Input
+        <Input
           type="number"
           placeholder="Digite seu CPF"
           value={cpf}
@@ -73,7 +90,7 @@ const Signup = () => {
           </C.Strong>
         </C.LabelSignin>
       </C.Content>
-    </C.Container>
+    </C.Container2>
   );
 };
 
