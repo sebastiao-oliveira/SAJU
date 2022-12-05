@@ -43,19 +43,26 @@ const Signup = () => {
     alert("Usuário cadatrado com sucesso!");
     navigate("/");
   };
-
+  
   return (
     
-    <C.Container2>
-     <C.Title>Tela Inicial</C.Title>
-        <Button Text="Sair" onClick={() => [navigate("/")]}>
-          Sair
-        </Button>
+        <C.Container>
 
-        <FaBars onClick={showSiderbar} />
-        {sidebar && <Sidebar active={setSidebar} />}
+<Sidebar><header style={Sidebar} ></header>
+  <C.Title>Tela Inicial</C.Title>
+     <Button Text="Sair" onClick={() => [navigate("/")]}>
+       Sair
+     </Button>
+ 
+     <FaBars onClick={showSiderbar} />
+     {sidebar && <Sidebar active={setSidebar} />}
+   </Sidebar>
+   
   
+ 
 
+            <FaBars onClick={showSiderbar} />
+    {sidebar && <Sidebar active={setSidebar} />}
       <C.Content>
         <Input
           type="number"
@@ -90,8 +97,10 @@ const Signup = () => {
           </C.Strong>
         </C.LabelSignin>
       </C.Content>
-    </C.Container2>
+    </C.Container>
+  
   );
 };
 
+   
 export default Signup;

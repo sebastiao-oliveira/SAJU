@@ -20,17 +20,19 @@ const Sidebar = ({ active }) => {
   const handleItem= () => {
      navigate("/SignUp");
   };
-  
+  const handleItem2= () => {
+    navigate("/Home");
+ };
 
   return (
     <Container sidebar={active}>
       <FaTimes onClick={closeSidebar} />  
       <Content>
-        <Button  Icon={FaHome} Text="Home"/>
-        <Button Icon={FaRegFileAlt} Text="Buscar por assistido" onClick={handleItem}/>
+        <Button  Icon={FaHome} Text="Home" onClick={handleItem2}/>
+        <Button Icon={FaRegFileAlt} Text="Buscar por assistido" onClick={handleItem2}/>
         <Button  Icon={FaRegFileAlt} Text="Triagem"  onClick={handleItem} />
-        <Button  Icon={FaRegFileAlt} Text="NAJUP" onClick={handleItem}/>
-        <Button  Icon={FaRegFileAlt} Text="Meu Plantão" onClick={handleItem}/>
+        <Button  Icon={FaRegFileAlt} Text="NAJUP" onClick={handleItem2}/>
+        <Button  Icon={FaRegFileAlt} Text="Meu Plantão" onClick={handleItem2}/>
         <Button  Icon={FaRegFileAlt} Text="Relatórios" onClick={handleItem}/>
         <Button  Icon={FaRegFileAlt} Text="O que fazer?" onClick={handleItem}/>
         <Button  Icon={FaRegFileAlt} Text="Quero Doar" onClick={handleItem}/>
