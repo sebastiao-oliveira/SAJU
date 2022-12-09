@@ -8,7 +8,6 @@ import useAuth from "../../hooks/useAuth";
 import Sidebar from "../../components/Sidebar";
 import { FaBars } from "react-icons/fa";
 
-
 //Tela de cadastro
 const Signup = () => {
   const [cpf, setCPF] = useState("");
@@ -43,26 +42,20 @@ const Signup = () => {
     alert("Usuário cadatrado com sucesso!");
     navigate("/");
   };
-  
+
   return (
-    
-        <C.Container>
-
-<Sidebar><header style={Sidebar} ></header>
-  <C.Title>Tela Inicial</C.Title>
-     <Button Text="Sair" onClick={() => [navigate("/")]}>
-       Sair
-     </Button>
- 
-     <FaBars onClick={showSiderbar} />
-     {sidebar && <Sidebar active={setSidebar} />}
-   </Sidebar>
+    <C.Container2>
    
-  
- 
+      
+        <C.Title>Sajuanos cadastro</C.Title>
+        <Button Text="Sair" onClick={() => [navigate("/")]}>
+          Sair
+        </Button>
 
-            <FaBars onClick={showSiderbar} />
-    {sidebar && <Sidebar active={setSidebar} />}
+        <FaBars onClick={showSiderbar} />
+        {sidebar && <Sidebar active={setSidebar} />}
+    
+      <C.Container>
       <C.Content>
         <Input
           type="number"
@@ -97,10 +90,9 @@ const Signup = () => {
           </C.Strong>
         </C.LabelSignin>
       </C.Content>
-    </C.Container>
-  
+      </C.Container>
+    </C.Container2>
   );
 };
 
-   
 export default Signup;

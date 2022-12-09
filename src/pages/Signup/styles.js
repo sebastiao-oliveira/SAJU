@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const Title = styled.h2``;
 
-export const Container = styled.div`
+export const Container= styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   height: 100vh;
+  
+  
 `;
-export const Container2 = styled.div`
+export const Container2 = styled.header`
   height: 100px;
   display: flex;
   background-color: #970000; 
