@@ -6,6 +6,8 @@ import useAuth from "../../hooks/useAuth";
 import * as C from "./styles";
 import { FaBars } from "react-icons/fa"
 import Sidebar from "../../components/Sidebar"
+import UserList from "../../components/UserList"
+
 
 //
 const Home = () => {
@@ -22,7 +24,7 @@ const Home = () => {
       <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
         Sair
       </Button>
-   
+      <UserList />
   <FaBars onClick={showSiderbar} />
       {sidebar && <Sidebar active={setSidebar} />}
     </C.Container>
