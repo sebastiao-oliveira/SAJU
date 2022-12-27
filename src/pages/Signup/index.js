@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Sidebar from "../../components/Sidebar";
 import { FaBars } from "react-icons/fa";
+import Footer from "../../components/Footer";
 
 //Tela de cadastro
 const Signup = () => {
@@ -45,8 +46,8 @@ const Signup = () => {
 
   return (
     <C.Container2>
-   
-      
+    <img src="logo.png" alt="Logo da saju" /> 
+    
         <C.Title>Sajuanos cadastro</C.Title>
         <Button Text="Sair" onClick={() => [navigate("/")]}>
           Sair
@@ -90,7 +91,9 @@ const Signup = () => {
           </C.Strong>
         </C.LabelSignin>
       </C.Content>
+      <Footer />
       </C.Container>
+     
     </C.Container2>
   );
 };

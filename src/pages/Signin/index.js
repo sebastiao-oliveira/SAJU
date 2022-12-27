@@ -4,6 +4,14 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Footer from '../../components/Footer';
+import Logo from '../../components/Logo'
+
+
+
+
+
+
 
 //Tela login
 const Signin = () => {
@@ -32,6 +40,7 @@ const Signin = () => {
 
   return (
     <C.Container>
+      <Logo src="https://d1fdloi71mui9q.cloudfront.net/zg4clEE9QuSYgBV1IXGg_7rc08N6s4D4m37aN" alt="Logo da empresa" />
       <C.Label>SAJU</C.Label>
       <C.Content>
         <Input
@@ -64,7 +73,9 @@ const Signin = () => {
           <Link to="/Signup">&nbsp;Cadastre um usuário fictício</Link>
         </C.Strong>
       </C.LabelSignup>
+      <Footer />
     </C.Container>
+    
   );
 };
 

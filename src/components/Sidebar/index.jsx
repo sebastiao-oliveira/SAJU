@@ -26,7 +26,8 @@ const Sidebar = ({ active }) => {
 
   return (
     <Container sidebar={active}>
-      <FaTimes onClick={closeSidebar} />  
+      <FaTimes onClick={closeSidebar} /> 
+      <img src="logo.png" alt="Logo da saju" /> 
       <Content>
         <Button  Icon={FaHome} Text="Home" onClick={handleItem2}/>
         <Button Icon={FaRegFileAlt} Text="Buscar por assistido" onClick={handleItem2}/>
