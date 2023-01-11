@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Footer from '../../components/Footer';
 import Logo from '../../components/Logo'
+//import NewSajuano from '../../components/NewSajuano';
 
 
 
@@ -73,6 +74,7 @@ const Signin = () => {
           <Link to="/Signup">&nbsp;Cadastre um usuário fictício</Link>
         </C.Strong>
       </C.LabelSignup>
+      
       <Footer />
     </C.Container>
     
